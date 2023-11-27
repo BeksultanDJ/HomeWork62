@@ -1,22 +1,21 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
-interface Props {
-    changeLocation: (location: string) => void;
-}
 
-const Toolbar: React.FC<Props> = ({ changeLocation }) => {
+
+const Toolbar: React.FC = () => {
     return (
         <>
             <nav>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a href="#" className="nav-link" onClick={() => changeLocation('home')}>Home</a>
+                        <NavLink to="/">Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">About Us</a>
+                        <NavLink to="/aboutUs">About Us</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Contacts</a>
+                        <NavLink to="/contacts">Contacts</NavLink>
                     </li>
                 </ul>
             </nav>
