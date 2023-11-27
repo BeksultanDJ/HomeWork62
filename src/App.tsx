@@ -1,27 +1,25 @@
 import './App.css';
+import { Route, Routes } from "react-router-dom";
 import Toolbar from "./componets/Tollbar/Toolbar.tsx";
-import {useState} from "react";
 import Home from "./componets/container/Home/Home.tsx";
+import AboutUs from "./componets/container/AboutUs/AboutUs.tsx";
+import Contacts from "./componets/container/Contacts/Contacts.tsx";
+
 
 function App() {
-    const [location, setLocation] = useState('home');
-
-    let content = null;
-
-    if (location === 'home') {
-        content = (
-            <Home />
-        );
-    }
-
     return (
-        <>
-            <Toolbar changeLocation={setLocation} />
+        <div>
+            <Toolbar />
             <div>
-                {content}
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/aboutUs" element={<AboutUs />} />
+                    <Route path="/contacts" element={<Contacts />} />
+                </Routes>
             </div>
-        </>
+        </div>
     );
 }
 
 export default App;
+
