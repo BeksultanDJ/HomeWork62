@@ -69,3 +69,49 @@ li {
   color: white;
   margin: 0;
 }
+
+.aboutBlock {
+  min-height: 600px;
+  background: url("../public/aboutImg1.jpg");
+  background-size: 100%;
+  padding: 15px;
+}
+
+strong {
+  color: white;
+  font-size: 25px;
+}
+
+.aboutText{
+  font-size: 20px;
+  text-shadow: 1px 1px 2px black;
+  color: white;
+}
+
+.aboutImg {
+  width: 30%;
+  height: auto;
+  margin-left: 20%;
+}
+
+.aboutImg1 {
+  width: 30%;
+  height: auto;
+  margin-left: 50%;
+}
+
+.linksBlock strong {
+  color: #1a1a1a;
+}
+
+.linksBlock a {
+  color: deeppink;
+  display: block;
+  font-size: 30px;
+  margin: 20px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 30px;
+}
