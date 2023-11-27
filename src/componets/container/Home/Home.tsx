@@ -5,7 +5,12 @@ function Home() {
 
     return (
         <>
-            <h1>Home page</h1>
+            <div className="container">
+             <div className="mainBlock">
+                 <h1 className="main-title">We love bikes</h1>
+                 <h3 className="main-title">Ride with us...</h3>
+             </div>
+            </div>
         </>
     )
 }
